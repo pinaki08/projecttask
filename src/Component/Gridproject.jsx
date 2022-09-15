@@ -26,10 +26,11 @@ const firstLook = [
   },
 ];
 function NewProject() {
-
   const clickHandler = () => {
     alert("types");
   };
+
+  const totalNew = Operation(creditNumber, debitNumber);
   return (
     <div className="newproject">
       <Container>
@@ -41,7 +42,6 @@ function NewProject() {
               <th>description</th>
               <th>creditNumber</th>
               <th>debitNumber</th>
-
             </tr>
           </thead>
 
@@ -61,9 +61,8 @@ function NewProject() {
                   <td>{description}</td>
                   <td>{creditNumber}</td>
                   <td>{debitNumber}</td>
-
+                  <td>{totalNew}</td>
                 </tr>
-
               );
             })}
             <button type="button" onClick={clickHandler}>

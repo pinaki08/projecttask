@@ -1,7 +1,9 @@
 
 export function Operation ( creditNumber, debitNumber) {
-    const totalNew  = creditNumber + debitNumber
+    // sum of araay in objectes
 
-    return totalNew;
+    const total  = creditNumber + debitNumber
+
+    return total;
 
 }
