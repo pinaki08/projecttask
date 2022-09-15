@@ -1,4 +1,5 @@
 import { Table, Container } from "react-bootstrap";
+import { Operation } from "../operationsbox/operation";
 
 const firstLook = [
   {
@@ -25,6 +26,7 @@ const firstLook = [
   },
 ];
 function NewProject() {
+
   const clickHandler = () => {
     alert("types");
   };
@@ -71,10 +73,9 @@ function NewProject() {
           </tbody>
         </Table>
       </Container>
+      <Operation />
     </div>
   );
 }
 
 export default NewProject;
-
-

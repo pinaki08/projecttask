@@ -12,11 +12,11 @@ export default projecttable;
 
 export function newoperation(props) {
   // const { serialNumber, date, creditNumber, debitNumber } = props;
-  const  creditNumber = 7889
-   const debitNumber = 4189
-   const total  = creditNumber + debitNumber
+  // const  creditNumber = 7889
+  //  const debitNumber = 4189
 
-  // console.log(total);
+
+
   return (
     <div>
       {" "}
@@ -24,7 +24,9 @@ export function newoperation(props) {
       {props.date}
       {props.creditNumber}
       {props.debitNumber}
-      {props.total}{" "}
+      {" "}
+
     </div>
+
   );
 }
