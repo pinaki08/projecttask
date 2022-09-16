@@ -1,32 +1,15 @@
 import "./App.css";
 import NewProject from "./Component/Gridproject";
-function projecttable(params) {
+function projecttable() {
   return (
     <div>
       <NewProject />
+
     </div>
   );
 }
+
+
+
 
 export default projecttable;
-
-export function newoperation(props) {
-  // const { serialNumber, date, creditNumber, debitNumber } = props;
-  // const  creditNumber = 7889
-  //  const debitNumber = 4189
-
-
-
-  return (
-    <div>
-      {" "}
-      {props.serialNumber}
-      {props.date}
-      {props.creditNumber}
-      {props.debitNumber}
-      {" "}
-
-    </div>
-
-  );
-}

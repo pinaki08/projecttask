@@ -1,5 +1,5 @@
 import { Table, Container } from "react-bootstrap";
-import { Operation } from "../operationsbox/operation";
+// import { Operation } from "../operationsbox/operation";
 
 const firstLook = [
   {
@@ -30,7 +30,7 @@ function NewProject() {
     alert("types");
   };
 
-  const totalNew = Operation(creditNumber, debitNumber);
+  // const totalNew = Operation(creditNumber, debitNumber);
   return (
     <div className="newproject">
       <Container>
@@ -61,7 +61,6 @@ function NewProject() {
                   <td>{description}</td>
                   <td>{creditNumber}</td>
                   <td>{debitNumber}</td>
-                  <td>{totalNew}</td>
                 </tr>
               );
             })}
@@ -72,9 +71,27 @@ function NewProject() {
           </tbody>
         </Table>
       </Container>
-      <Operation />
+      {
+        //<Operation />
+      }
     </div>
   );
 }
 
 export default NewProject;
+
+export function Newoperation(props) {
+  const { serialNumber, date, creditNumber, debitNumber } = props;
+  // const  creditNumber = 7889
+  //  const debitNumber = 4189
+
+  return (
+    <div>
+      {" "}
+      {serialNumber}
+      {date}
+      {creditNumber}
+      {debitNumber}{" "}
+    </div>
+  );
+}
